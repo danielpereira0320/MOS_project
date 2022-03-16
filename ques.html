@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>
+        Get value of selected
+        radio button
+    </title>
+</head>
+ <body bgcolor="aqua">
+    <h1>
+        choose the corect answer click on Submit.
+    </h1>
+      
+    <h2>Question1:</h2>
+    <input type="radio" name="ans1" value="option1">option1
+    <input type="radio" name="ans1" value="option2">option2
+    <input type="radio" name="ans1" value="option3">option3
+    <br><br>
+      
+    <button type="button" onclick="displayRadioValue1()">
+        Submit
+    </button>
+      
+    <br><br>
+<button type="button" onclick="displayscorrectValue1()">
+        show the ans
+    </button>
+      
+   <br><br>
+
+<button type="button" onclick="displayscoreValue1()">
+        score
+    </button>
+      
+    <br><br>
+      
+    <p id="yourans1"></p>
+    <p id="actualans1"></p>
+    <p id="marks1"></p>
+      
+    <script>
+        function displayRadioValue1() 
+{
+            var ele = document.getElementsByName('ans1');
+              
+            for(i = 0; i < ele.length; i++) 
+{
+                if(ele[i].checked)
+                document.getElementById("yourans1").innerHTML
+                        = "your answer: "+ele[i].value;
+            }
+
+        }
+function displayscorrectValue1() 
+{
+            var ele1 = document.getElementsByName('ans1');
+let score;
+switch (ele1)
+ {
+  case 0:
+    score = "wrong";
+    break;
+  case 1:
+    day = "wrong";
+    break;
+  case 2:
+    day = "correct";
+    break;
+   
+}
+
+                document.getElementById("actualans1").innerHTML
+                        = "correct answer: "+ele1[2].value;
+            
+        }
+function displayscoreValue1() 
+{
+            var ele2 = document.getElementsByName('ans1');
+              
+            for(i = 0; i < ele2.length; i++) 
+{
+                if(ele2[2].checked)
+                document.getElementById("marks1").innerHTML
+                        = "you scored 2 marks ";
+                 else
+document.getElementById("marks1").innerHTML
+                        = "you scored 0 marks ";
+
+            }
+
+        }
+    </script>
+-------------------------------------------
+<h2>Question2:</h2>
+    <input type="radio" name="ans2" value="option1">option1
+    <input type="radio" name="ans2" value="option2">option2
+    <input type="radio" name="ans2" value="option3">option3
+    <br><br>
+      
+    <button type="button" onclick="displayRadioValue2()">
+        Submit
+    </button>
+      
+    <br><br>
+<button type="button" onclick="displayscorrectValue2()">
+        show the ans
+    </button>
+      
+   <br><br>
+
+<button type="button" onclick="displayscoreValue2()">
+        score
+    </button>
+      
+    <br><br>
+      
+    <p id="yourans2"></p>
+    <p id="actualans2"></p>
+    <p id="marks2"></p>
+      
+    <script>
+        function displayRadioValue2() 
+{
+            var ele = document.getElementsByName('ans2');
+              
+            for(i = 0; i < ele.length; i++) 
+{
+                if(ele[i].checked)
+                document.getElementById("yourans2").innerHTML
+                        = "your answer: "+ele[i].value;
+            }
+
+        }
+function displayscorrectValue2() 
+{
+            var ele1 = document.getElementsByName('ans2');
+let score;
+switch (ele1)
+ {
+  case 0:
+    score = "wrong";
+    break;
+  case 1:
+    day = "wrong";
+    break;
+  case 2:
+    day = "correct";
+    break;
+   
+}
+
+                document.getElementById("actualans2").innerHTML
+                        = "correct answer: "+ele1[2].value;
+            
+        }
+function displayscoreValue2() 
+{
+            var ele2 = document.getElementsByName('ans2');
+              
+            for(i = 0; i < ele2.length; i++) 
+{
+                if(ele2[2].checked)
+                document.getElementById("marks2").innerHTML
+                        = "you scored 2 marks ";
+                 else
+document.getElementById("marks2").innerHTML
+                        = "you scored 0 marks ";
+
+            }
+
+        }
+    </script>
+--------------------------------------------------------------------------------------
+<h2>Question3:</h2>
+    <input type="radio" name="ans3" value="option1">option1
+    <input type="radio" name="ans3" value="option2">option2
+    <input type="radio" name="ans3" value="option3">option3
+    <br><br>
+      
+    <button type="button" onclick="displayRadioValue3()">
+        Submit
+    </button>
+      
+    <br><br>
+<button type="button" onclick="displayscorrectValue3()">
+        show the ans
+    </button>
+      
+   <br><br>
+
+<button type="button" onclick="displayscoreValue3()">
+        score
+    </button>
+      
+    <br><br>
+      
+    <p id="yourans3"></p>
+    <p id="actualans3"></p>
+    <p id="marks3"></p>
+      
+    <script>
+        function displayRadioValue3() 
+{
+            var ele = document.getElementsByName('ans3');
+              
+            for(i = 0; i < ele.length; i++) 
+{
+                if(ele[i].checked)
+                document.getElementById("yourans3").innerHTML
+                        = "your answer: "+ele[i].value;
+            }
+
+        }
+function displayscorrectValue3() 
+{
+            var ele1 = document.getElementsByName('ans2');
+let score;
+switch (ele1)
+ {
+  case 0:
+    score = "wrong";
+    break;
+  case 1:
+    day = "wrong";
+    break;
+  case 2:
+    day = "correct";
+    break;
+   
+}
+
+                document.getElementById("actualans3").innerHTML
+                        = "correct answer: "+ele1[1].value;
+            
+        }
+function displayscoreValue3() 
+{
+            var ele2 = document.getElementsByName('ans3');
+              
+            for(i = 0; i < ele2.length; i++) 
+{
+                if(ele2[1].checked)
+                document.getElementById("marks3").innerHTML
+                        = "you scored 2 marks ";
+                 else
+document.getElementById("marks3").innerHTML
+                        = "you scored 0 marks ";
+
+            }
+
+        }
+    </script>
+</body>
+</html>
